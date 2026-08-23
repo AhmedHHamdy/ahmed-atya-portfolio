@@ -34,6 +34,50 @@ body {
   pointer-events: none;
 }
 
+.testimonial-card .user-avatar {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  color: #101300;
+  background: radial-gradient(circle at 30% 20%, #e8ff7a, #cbf702 48%, #809b00);
+  border-color: #cbf702;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.col-bottom1 .img-circle {
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.col-bottom1 .img-circle:hover {
+  background-color: #ffffff1a;
+  transform: translateY(-5px) scale(1.06);
+}
+
+/* Use one consistent gap between the services heading and cards. */
+.column-b.col5,
+.column-b.about-services-head {
+  margin-bottom: 0;
+}
+
+.column-b.about-services-head + .about-services-list {
+  margin-top: 0;
+}
+
+.column-d + .marquee-section {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+footer.column-e {
+  margin-top: 80px;
+}
+
 .card4 input,
 .card4 textarea {
   text-align: left !important;
@@ -87,6 +131,10 @@ textarea {
 @media (max-width: 767px) {
   body {
     --section-spacing: 64px !important;
+  }
+
+  .header + .component-a {
+    margin-top: 28px;
   }
 
   .mobile-site-nav {

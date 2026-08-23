@@ -42,24 +42,21 @@ export const services = [
   },
 ];
 
-const avatar =
-  "https://media.licdn.com/dms/image/v2/D4D03AQFUnehCeF5QLA/profile-displayphoto-scale_400_400/B4DZvdYlP0JQAg-/0/1768945768624?e=1775088000&v=beta&t=w3IVEAL4psD70UaG6swUNEEGBrKDw7_MXiMTYo-BUgI";
-
 export const testimonialRows = [
   {
     rowClass: "frame-a frame5 marquee-right",
     testimonials: [
-      { text: "I'm Ahmed Atya, a UI/UX Designer with a background in Motion Graphics. I create user centered designs that drive engagement.", name: "Ahmed Mostafa", title: "CEO @ BB4IT", avatar },
-      { text: "The products I design are a reflection of my thinking. Solving problems with simple visuals is my core strength.", name: "Mohamed Ali", title: "Creative Director", avatar },
-      { text: "High quality interfaces that turn complex problems into simple solutions. Every project is approached with focus.", name: "Sarah Jonas", title: "Product Manager", avatar },
+      { text: "I'm Ahmed Atya, a UI/UX Designer with a background in Motion Graphics. I create user centered designs that drive engagement.", name: "Ahmed Mostafa", title: "CEO @ BB4IT" },
+      { text: "The products I design are a reflection of my thinking. Solving problems with simple visuals is my core strength.", name: "Mohamed Ali", title: "Creative Director" },
+      { text: "High quality interfaces that turn complex problems into simple solutions. Every project is approached with focus.", name: "Sarah Jonas", title: "Product Manager" },
     ],
   },
   {
     rowClass: "frame-a frame6 marquee-left",
     testimonials: [
-      { text: "Working with Ahmed was a game changer for our business. The UI is stunning and easy to use.", name: "Jessica Ray", title: "Tech Lead", avatar },
-      { text: "The best design services I have ever used. Highly professional, creative, and reliable.", name: "Kareem Helmy", title: "Startup Founder", avatar },
-      { text: "Ahmed has a unique eye for animation and user flow. Our users love the new experience.", name: "Layla Smith", title: "Lead UX", avatar },
+      { text: "Working with Ahmed was a game changer for our business. The UI is stunning and easy to use.", name: "Jessica Ray", title: "Tech Lead" },
+      { text: "The best design services I have ever used. Highly professional, creative, and reliable.", name: "Kareem Helmy", title: "Startup Founder" },
+      { text: "Ahmed has a unique eye for animation and user flow. Our users love the new experience.", name: "Layla Smith", title: "Lead UX" },
     ],
   },
 ];

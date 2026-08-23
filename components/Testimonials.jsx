@@ -2,12 +2,18 @@ import { testimonialRows } from "./data";
 import SectionLabel from "./SectionLabel";
 
 function TestimonialCard({ testimonial }) {
+  const initials = testimonial.name
+    .split(" ")
+    .map((part) => part[0])
+    .slice(0, 2)
+    .join("");
+
   return (
     <article className="testimonial-card reveal-on-scroll reveal-up">
       <div className="stars" aria-label="5 out of 5 stars">★★★★★</div>
       <p className="testimonial-text">{testimonial.text}</p>
       <div className="user-info">
-        <img src={testimonial.avatar} className="user-avatar" alt={testimonial.name} />
+        <div className="user-avatar" aria-hidden="true">{initials}</div>
         <div className="user-details">
           <h3 className="user-name">{testimonial.name}</h3>
           <p className="user-title">{testimonial.title}</p>
