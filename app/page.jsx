@@ -48,6 +48,10 @@ export default function HomePage() {
               <ActionLink text="view Portfolio" className="card-b card4" href="/portfolio" />
             </div>
           </div>
+          <div className="mobile-hero-stage" aria-hidden="true">
+            <img src="/assets/home/header-img.png" alt="" />
+            <span>AHMED ATYA</span>
+          </div>
           <h1 className="header-title title">AHMED ATYA</h1>
         </div>
       </header>
@@ -59,7 +63,7 @@ export default function HomePage() {
       </h2>
 
       <section className="row3">
-        <div className="frame-left reveal-on-scroll reveal-left">
+        <div className="frame-left frame-left-desktop reveal-on-scroll reveal-left">
           <img src="/assets/home/group.svg" className="group" alt="Ahmed Atya monogram" />
         </div>
         <div className="col-right reveal-on-scroll reveal-right reveal-delay-1">
@@ -72,6 +76,9 @@ export default function HomePage() {
               <br />
               JUST VISUALS.
             </h2>
+            <div className="frame-left frame-left-mobile" aria-hidden="true">
+              <img src="/assets/home/group.svg" className="group" alt="" />
+            </div>
             <p className="column-text1">
               I design interfaces that turn complex problems into simple solutions. Every project is
               approached with clarity, creativity, and focus on the user&apos;s experience, delivering

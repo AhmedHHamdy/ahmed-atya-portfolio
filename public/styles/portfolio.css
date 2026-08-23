@@ -118,3 +118,21 @@ body {
 .col1 {
   margin-inline: auto;
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 16px;
+  }
+
+  .col1 {
+    gap: 16px;
+    width: 100%;
+    margin-top: 28px;
+    padding-inline: 16px;
+  }
+
+  .col1 .row-a,
+  .col1 .row-b {
+    gap: 16px;
+  }
+}

@@ -293,3 +293,155 @@ body {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 767px) {
+  body {
+    padding: 16px 0 0;
+  }
+
+  .row4 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 48px;
+    width: 100%;
+    margin-top: 32px;
+    padding-inline: 16px;
+  }
+
+  .row4 > .col-left2 {
+    align-items: flex-start;
+    gap: 28px;
+    width: 100%;
+    max-width: none;
+    text-align: left;
+  }
+
+  .col-left2 .col {
+    gap: 16px;
+    width: 100%;
+  }
+
+  .col-left2 .row-g {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .col-left2 .row-g > * {
+    margin: 0;
+    text-align: left;
+  }
+
+  .col-left2 .row-frame-left {
+    display: grid;
+    place-items: center;
+    flex: 0 0 46px;
+    width: 46px;
+    height: 46px;
+    border-radius: 9px;
+    padding: 12px;
+  }
+
+  .col-left2 .row-frame-left img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+  }
+
+  .col-left2 .row-col {
+    gap: 3px;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .col-left2 .row-text-product {
+    font-size: 11px;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  .col-left2 .row-text-hero {
+    overflow-wrap: anywhere;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .col-left2 .col-bottom1 {
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .col-left2 .row-bottom {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .col-left2 .img-circle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .row4 > form.card4 {
+    align-items: stretch;
+    gap: 14px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: left;
+  }
+
+  form.card4 .card-subtitle2 {
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  form.card4 .input-group {
+    align-items: stretch;
+    gap: 12px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  form.card4 .input-group > * {
+    text-align: left;
+  }
+
+  form.card4 .input-group-input-hero-header,
+  form.card4 .card-input-hero1,
+  form.card4 .card-input-hero2 {
+    width: 100%;
+    min-height: 48px;
+    border-radius: 9px;
+    padding: 13px 14px;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  form.card4 .card-input-hero2 {
+    min-height: 130px;
+    resize: vertical;
+  }
+
+  form.card4 button.card-frame-bottom {
+    align-self: flex-start;
+    gap: 8px;
+    width: fit-content;
+    min-width: 0;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  form.card4 button.card-frame-bottom .card-arrow-right2 {
+    width: 18px;
+    height: 18px;
+  }
+}

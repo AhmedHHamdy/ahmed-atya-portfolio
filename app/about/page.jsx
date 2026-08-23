@@ -42,7 +42,7 @@ export default function AboutPage() {
       </section>
 
       <section className="row4">
-        <div className="group-left reveal-on-scroll reveal-left">
+        <div className="group-left group-left-desktop reveal-on-scroll reveal-left">
           <div className="group">
             <div className="rect" />
             <img src="/assets/about-me/img.png" className="img" alt="Ahmed Atya" />
@@ -63,6 +63,17 @@ export default function AboutPage() {
                 <br />
                 just visuals.
               </h2>
+            </div>
+            <div className="group-left group-left-mobile" aria-hidden="true">
+              <div className="group">
+                <div className="rect" />
+                <img src="/assets/about-me/img.png" className="img" alt="" />
+              </div>
+              <div className="card4">
+                <p className="card-text-top">Repeat Clients</p>
+                <img src="/assets/about-me/card-group.svg" className="card-group" alt="" />
+                <h2 className="card-subtitle2">85%</h2>
+              </div>
             </div>
             <p className="column-text1">
               I design interfaces that turn complex problems into simple solutions. Every project is

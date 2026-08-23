@@ -139,6 +139,9 @@ body {
   padding-left: 418px;
   position: relative;
 }
+.group-left-mobile {
+  display: none;
+}
 .group {
   width: calc(100% - 32px);
   max-width: 542px;
@@ -462,4 +465,246 @@ body {
 }
 .col1 .column-img {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .row4 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    margin: 24px auto 28px;
+    padding-inline: 16px;
+  }
+
+  .group-left-desktop {
+    display: none;
+  }
+
+  .row4 > .col-right {
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    text-align: left;
+  }
+
+  .row4 .col1 {
+    align-self: stretch;
+    gap: 16px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .row4 .column-group {
+    width: 100%;
+  }
+
+  .row4 .column-subtitle1 {
+    width: 100%;
+    white-space: normal;
+    font-size: clamp(21px, 5.65vw, 24px) !important;
+    line-height: 1.32;
+    text-align: left;
+  }
+
+  .row4 .glass-pill {
+    border-radius: 4px;
+    padding: 0 4px !important;
+  }
+
+  .group-left-mobile {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.54;
+    margin: 12px 0 4px;
+    padding: 0;
+    position: relative;
+  }
+
+  .group-left-mobile .group {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    inset: 0;
+    transform: none;
+  }
+
+  .group-left-mobile .rect {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    border-radius: 8px;
+    position: absolute;
+    inset: 0;
+  }
+
+  .group-left-mobile .img {
+    width: auto;
+    max-width: 72%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 19%;
+  }
+
+  .group-left-mobile .card4 {
+    z-index: 2;
+    gap: 3px;
+    width: 84px;
+    margin: 0;
+    border-radius: 4px;
+    padding: 8px 4px;
+    position: absolute;
+    top: -24px;
+    right: 8px;
+  }
+
+  .group-left-mobile .card-text-top {
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
+  .group-left-mobile .card-group {
+    width: 24px;
+    height: 25px;
+  }
+
+  .group-left-mobile .card-subtitle2 {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  .row4 .column-text1 {
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .row4 .card5 {
+    align-self: flex-start;
+    gap: 8px;
+    height: 40px;
+    margin: 0;
+    padding: 3px 14px 3px 3px !important;
+    font-size: 11px;
+  }
+
+  .row4 .card5 .card-circle2 {
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+  }
+
+  .row4 .card5 .message {
+    height: 18px;
+  }
+
+  .col4 {
+    align-items: stretch;
+    width: 100%;
+    margin-top: 64px;
+    padding: 32px 16px;
+  }
+
+  .col4 > .col5 {
+    gap: 28px;
+    width: 100%;
+  }
+
+  .col4 .row-top2 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .col4 .row-top2 .card-left {
+    gap: 6px;
+    padding: 8px 10px;
+    font-size: 11px !important;
+  }
+
+  .col4 .row-top2 .row-subtitle2 {
+    width: 100%;
+    max-width: 310px;
+    font-size: 18px !important;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .col4 .col6 {
+    gap: 0;
+    width: 100%;
+  }
+
+  .col4 .col6 > article {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+    text-align: left;
+  }
+
+  .col4 .col6 > article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .col4 .column-f {
+    gap: 6px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .col4 .column-text3 {
+    font-size: 11px;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  .col4 .column-subtitle8 {
+    white-space: normal;
+    font-size: 16px;
+    line-height: 1.3;
+    text-align: left;
+  }
+
+  .col4 .row-f {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .col4 .row-text2 {
+    text-align: left;
+  }
+
+  .col4 .row-circle {
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    padding: 7px;
+  }
+
+  .col4 .row-arrow-right {
+    width: 18px;
+    height: 18px;
+  }
 }
