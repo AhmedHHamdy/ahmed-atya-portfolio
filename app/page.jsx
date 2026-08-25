@@ -89,7 +89,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="col2">
+      <section className="col2 add-gap">
         <div className="row-top2 row-top3">
           <div className="col3 reveal-on-scroll reveal-left">
             <SectionLabel label="My Projects" />

@@ -357,6 +357,9 @@ body {
   .frame-left {
     padding-inline: var(--margin-md);
   }
+  .add-gap {
+    gap: 118px;
+  }
 }
 @media screen and (max-width: 576px) {
   .frame-left {
@@ -1338,3 +1341,4 @@ body {
   position: relative;
   top: 80px;
 }
+
