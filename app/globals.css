@@ -620,6 +620,55 @@ textarea {
     display: none !important;
   }
 
+  /* Mobile-only services treatment from the compact design. */
+  .home-services-section {
+    isolation: isolate;
+    position: relative;
+    width: 100%;
+  }
+
+  .home-services-section::before,
+  .home-services-section::after {
+    content: "";
+    z-index: -1;
+    pointer-events: none;
+    position: absolute;
+    width: 260px;
+    height: 360px;
+    background: radial-gradient(ellipse at center, #cbf70224 0%, #cbf7020d 38%, #cbf70200 74%);
+    filter: blur(28px);
+  }
+
+  .home-services-section::before {
+    top: -20px;
+    left: -150px;
+  }
+
+  .home-services-section::after {
+    right: -150px;
+    bottom: -42px;
+  }
+
+  .home-services-section .about-services-list {
+    gap: 24px;
+  }
+
+  .home-services-section .service-card {
+    background:
+      linear-gradient(#151515b8, #151515b8),
+      linear-gradient(90deg, #354000 0%, #000 100%);
+    border: 0;
+    box-shadow: inset 0 0 0 1px #ffffff05;
+  }
+
+  .home-services-section .about-services-list .service-card {
+    box-sizing: border-box;
+    height: 97px;
+    min-height: 97px;
+    border-radius: 16px;
+    padding: 0 16px;
+  }
+
   /* Shared Testimonials section */
   .column-d.col7 {
     align-items: flex-start;

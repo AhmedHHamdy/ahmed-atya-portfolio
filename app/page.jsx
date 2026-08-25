@@ -113,15 +113,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="column-b col5 reveal-on-scroll reveal-left">
-        <SectionLabel label="My Services" />
-        <h2 className="column-subtitle2 subtitle1">
-          I offer multiple services
-          <br />
-          guided by one clear vision
-        </h2>
+      <section className="home-services-section">
+        <div className="column-b col5 reveal-on-scroll reveal-left">
+          <SectionLabel label="My Services" />
+          <h2 className="column-subtitle2 subtitle1">
+            I offer multiple services
+            <br />
+            guided by one clear vision
+          </h2>
+        </div>
+        <Services />
       </section>
-      <Services />
       <TestimonialsHeading />
       <Testimonials />
       <Footer />
