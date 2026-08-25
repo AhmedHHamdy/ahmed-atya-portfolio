@@ -49,7 +49,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mobile-hero-stage" aria-hidden="true">
-            <img src="/assets/home/header-img.png" alt="" />
+            <img src="/assets/home/mobile-photo.png" alt="" />
             <span>AHMED ATYA</span>
           </div>
           <h1 className="header-title title">AHMED ATYA</h1>

@@ -376,6 +376,8 @@ body {
   height: 28px;
 }
 .component-a {
+  --logo-gap: 48px;
+  --logo-marquee-duration: 75s;
   border-top: 0.1px solid #fff;
   border-bottom: 0.1px solid #fff;
   -webkit-backdrop-filter: blur(18px) saturate(140%);
@@ -397,20 +399,31 @@ body {
   position: absolute;
   inset: 0;
 }
-.logos-track {
-  gap: 48px;
+.component-a > .logos-track {
+  gap: 0;
   width: max-content;
-  animation: 40s linear infinite scroll-left;
+  animation: var(--logo-marquee-duration) linear infinite logo-marquee-scroll;
   display: flex;
+  will-change: transform;
 }
-.logos-group {
+.component-a .logos-group {
+  flex-shrink: 0;
   align-items: center;
-  gap: 48px;
+  gap: var(--logo-gap);
+  padding-right: var(--logo-gap);
   display: flex;
 }
-.logo-item {
+.component-a .logo-item {
   flex-shrink: 0;
   height: 50px;
+}
+@keyframes logo-marquee-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
 @keyframes scroll-left {
   0% {

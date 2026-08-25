@@ -80,18 +80,26 @@ body {
 .header-group {
   z-index: 1;
   width: calc(100% - 32px);
-  max-width: 814px;
-  height: 519px;
+  max-width: 980px;
+  height: 540px;
   position: absolute;
-  top: 460px;
+  top: 350px;
   left: 50%;
   transform: translate(-50%);
 }
 .header-ellipse {
-  background-color: #cbf7024d;
-  max-width: 814px;
-  height: 519px;
-  top: 0;
+  filter: blur(84px);
+  background: radial-gradient(
+    ellipse at center,
+    #cbf7028c 0%,
+    #cbf70257 14%,
+    #cbf70226 38%,
+    #cbf70200 48%
+  );
+  width: 20%;
+  max-width: none;
+  height: 60%;
+  top: 60px;
   left: 0;
 }
 .header-img {
@@ -410,11 +418,12 @@ body {
   align-items: center;
   display: flex;
 }
+.header + .component-a > .logos-track {
+  --logo-marquee-duration: 18s;
+}
 .logos-track {
-  will-change: transform;
   gap: 0;
   width: max-content;
-  animation: 75s linear infinite scroll-left;
   display: flex;
 }
 .logos-group {
@@ -542,30 +551,18 @@ body {
   .header {
     gap: 32px;
     padding-top: 16px;
+    background:
+      radial-gradient(ellipse 68% 82% at -10% 27%, #cbf70220 0%, #cbf7020c 22%, #cbf70200 74%),
+      radial-gradient(ellipse 82% 46% at 110% 30%, #cbf70224 0%, #cbf7020d 20%, #cbf70200 76%);
   }
   .header:after {
     height: 120px;
   }
   .ellipse.header-circle {
-    filter: blur(70px);
-    background-color: #cbf7022e;
-    width: 280px;
-    max-width: none;
-    height: 280px;
-    display: block;
-    top: 288px;
-    left: 50%;
-    transform: translate(-50%);
+    display: none;
   }
   .header-group {
-    width: calc(100% - 32px);
-    max-width: 320px;
-    height: 220px;
-    top: 296px;
-  }
-  .header-ellipse {
-    max-width: none;
-    height: 220px;
+    display: none;
   }
   .mobile-nav {
     z-index: 20;
@@ -838,8 +835,20 @@ body {
     content: "";
     z-index: -1;
     pointer-events: none;
+    filter: blur(39px);
+    background: radial-gradient(
+      circle at center,
+      #cbf70247 0%,
+      #cbf70229 38%,
+      #cbf70210 62%,
+      #cbf70200 80%
+    );
+    width: min(118vw, 460px);
+    height: 70px;
     position: absolute;
-    inset: -40px -16px 0;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .mobile-hero-stage img {
     z-index: 1;
@@ -849,11 +858,11 @@ body {
     height: 255px;
     margin: 0;
     position: absolute;
-    bottom: 10px;
+    bottom: -4px;
     left: 50%;
     transform: translateX(-50%);
     -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
-    mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 0%, #000 78%, transparent 90%);
   }
   .mobile-hero-stage span {
     z-index: 2;
@@ -879,6 +888,9 @@ body {
   .logos-track,
   .logos-group {
     gap: 24px;
+  }
+  .component-a > .logos-track {
+    gap: 0;
   }
   .logos-group {
     padding-right: 24px;

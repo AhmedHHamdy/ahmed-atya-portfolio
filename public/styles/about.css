@@ -420,10 +420,9 @@ body {
   }
 }
 .component1 .logos-track {
-  will-change: transform;
   gap: 0;
   width: max-content;
-  animation: 18s linear infinite scroll-left;
+  --logo-marquee-duration: 18s;
   display: flex;
 }
 .component1 .logos-group {

@@ -132,12 +132,12 @@ textarea {
   body {
     --section-spacing: 64px !important;
     gap: 0 !important;
-    padding-top: 16px !important;
+    padding-top: 104px !important;
   }
 
-  /* Home supplies the same spacing on its hero header. */
+  /* Reserve room for the fixed mobile navigation on Home too. */
   body:has(> .header) {
-    padding-top: 0 !important;
+    padding-top: 104px !important;
   }
 
   /* Prevent decorative absolute shapes from extending the mobile document. */
@@ -184,15 +184,82 @@ textarea {
     height: 20px;
   }
 
+  /* Shared responsive CTA size: 168 × 48, Poppins Medium 14/132%. */
+  body .card-b {
+    justify-content: flex-start;
+    gap: 10px !important;
+    width: 168px !important;
+    min-width: 168px !important;
+    height: 48px !important;
+    min-height: 48px;
+    padding: 4px 14px 4px 4px !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.32;
+  }
+
+  body .card-b .card-circle2 {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 8px !important;
+  }
+
+  body .card-b .card-text {
+    white-space: nowrap;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.32;
+  }
+
+  body .card-b .message {
+    width: 24px;
+    height: 24px !important;
+  }
+
+  body button.card-frame-bottom {
+    width: 168px !important;
+    min-width: 168px !important;
+    height: 48px !important;
+    min-height: 48px;
+    padding: 0 16px !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    line-height: 1.32;
+  }
+
+  /* Shared responsive paragraph typography. CTA labels keep their own token above. */
+  body p[class]:not(.card-text) {
+    color: #fff !important;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 1.32 !important;
+    letter-spacing: 0 !important;
+    text-transform: capitalize;
+  }
+
   .mobile-site-nav {
     z-index: 100;
-    display: block;
+    display: flex;
+    align-items: center;
     width: 100%;
-    padding: 0 16px;
-    position: relative;
+    height: 104px;
+    padding: 0 22px;
+    position: fixed;
+    inset: 0 0 auto;
+    background:
+      radial-gradient(circle at 20% 80%, #cbf70217 0%, #cbf7020a 0%, #cbf70200 22%),
+      linear-gradient(90deg, #11150afa 100%, #0b0d05fa 60%);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(100px);
+    border-bottom: 1px solid #ffffff0a;
   }
 
   .mobile-site-nav.is-open {
+    display: block;
     position: fixed;
     inset: 0;
     z-index: 1000;
@@ -207,7 +274,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 42px;
+    width: 100%;
+    min-height: 48px;
   }
 
   .mobile-site-nav.is-open .mobile-site-nav__bar {
@@ -218,19 +286,20 @@ textarea {
     color: #fff;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 10px;
+    min-height: 44px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     background: #10130de6;
     border: 1px solid #ffffff5c;
     border-radius: 999px;
-    padding: 8px 12px;
+    padding: 8px 14px;
   }
 
   .mobile-site-nav__brand img {
-    width: 18px;
-    height: 22px;
+    width: 20px;
+    height: 26px;
   }
 
   .mobile-site-nav.is-open .mobile-site-nav__brand {
@@ -241,8 +310,8 @@ textarea {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
     border: 1px solid #ffffff2e;
     border-radius: 50%;
     background: #10120bd9;
@@ -407,6 +476,10 @@ textarea {
   .component-a .logos-track,
   .component-a .logos-group {
     gap: 24px;
+  }
+
+  .component-a > .logos-track {
+    gap: 0;
   }
 
   .component-a .logos-group {
