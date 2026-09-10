@@ -101,7 +101,7 @@ export default function Navigation({ active }) {
             <div className="mobile-site-nav__socials">
               {[1, 2, 3, 4].map((number) => (
                 <img
-                  src={`/assets/contact/img-circle${number}.png`}
+                  src={`/assets/column-row/column-img-circle${number === 1 ? "" : number}.png`}
                   alt={`Social link ${number}`}
                   key={number}
                 />

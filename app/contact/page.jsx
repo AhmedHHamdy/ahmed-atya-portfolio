@@ -49,7 +49,7 @@ export default function ContactPage() {
             <h2 className="subtitle-hero">social media</h2>
             <div className="row-bottom">
               {[1, 2, 3, 4].map((number) => (
-                <img src={`/assets/contact/img-circle${number}.png`} className="img-circle" alt={`Social link ${number}`} key={number} />
+                <img src={`/assets/column-row/column-img-circle${number === 1 ? "" : number}.png`} className="img-circle" alt={`Social link ${number}`} key={number} />
               ))}
             </div>
           </div>
