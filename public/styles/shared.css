@@ -1624,12 +1624,6 @@ body {
   width: 48px;
   height: 48px;
   padding: 1px;
-  transition: all 0.3s;
-}
-.column-row8 img:hover,
-.column-row8 .column-img-circle:hover {
-  background: #ffffff1a;
-  transform: translateY(-5px) scale(1.06);
 }
 .desktop-nav {
   z-index: 100;
